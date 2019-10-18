@@ -29,7 +29,9 @@ class VisitTemp(models.Model):
 
     implementation_partner = fields.Selection([('burera', 'Burera'),
                                                ('rulindo', 'Rulindo'),
-                                               ('musanze', 'Musanze')])
+                                               ('musanze', 'Musanze'),
+                                               ('gakenke', 'Gakenke'),
+                                               ('gisagara', 'Gisagara')])
     facilitator_id = fields.Many2one('res.users')
     co_facilitator_id = fields.Many2one('res.users')
     session_id = fields.Char()
