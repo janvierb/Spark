@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="community_form_view_inh05122018" model="ir.ui.view">
+            <field name="name">sparkit.community.form</field>
+            <field name="model">sparkit.community</field>
+            <field name="inherit_id" ref="sparkit.community_form_view"/>
+            <field name="arch" type="xml">
+                <button name="action_graduation" position="after">
+                    <button name="debugging_workflow"
+                            string="Debugging Workflow"
+                            type="object"
+                            style="float: right;"
+                            groups="base.group_system"
+                            attrs="{'invisible': [('phase', '!=', 'post_implementation')]}"/>
+                </button>
+            </field>
+        </record>
+    </data>
+</odoo>

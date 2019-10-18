@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <template id="ussd_template">
+           <t t-esc="menu"/>
+        </template>
+    </data>
+</odoo>

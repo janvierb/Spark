@@ -1,0 +1,18 @@
+<odoo>
+    <data>
+        <record id="visit_report_form_view_inh25012019" model="ir.ui.view">
+            <field name="name">sparkit.vrf.form</field>
+            <field name="model">sparkit.vrf</field>
+            <field name="inherit_id" ref="sparkit.visit_report_form_view"/>
+            <field name="arch" type="xml">
+                <field name="speakers_first_time" position="after">
+                    <field name="attendance_government_officials"
+                           attrs="{'readonly': [('state', '=', 'approved')]}"/>
+                </field>
+                <field name="created_on_odoo" position="before">
+                    <field name="created_on_ussd" invisible="1"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
